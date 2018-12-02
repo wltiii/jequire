@@ -1,0 +1,48 @@
+<project name="jequire" default="all">
+    <property name="sources" value="../src" description="Java Source Sources" />
+    <property name="rsrc" value="../resource" description="application resources" />
+    <property name="lib" value="../lib" description="Java Libraries" />
+    <property name="jar" value="../jar" description="Java Jar" />
+    <property name="class" value="../class" description="Java class" />
+
+    <path id="commonpath" description="common classpath">
+        <fileset dir="${lib}" includes="*.jar" />
+    </path>
+
+    <path id="buildpath" description="">
+        <path refid="commonpath" />
+        <pathelement path="${class}" />
+    </path>
+
+    <target name="clean" depends="">
+        <delete file="${jar}/${ant.project.name}.jar" />
+         <delete file="${jar}/MANIFEST.MF" />
+       <delete includeEmptyDirs="true">
+            <fileset dir="${class}" includes="**/*" />
+        </delete>
+    </target>
+
+    <target name="build" depends="" description="compile java files">
+        <javac srcdir="${sources}" destdir="${class}" />
+    </target>
+
+    <target name="compile_java" depends="" description="compile java files">
+        <javac srcdir="${sources}" destdir="${class}" deprecation="on" debug="on" classpathref="buildpath">
+        </javac>
+    </target>
+
+    <target name="jar_java" depends="compile_java" description="Create ${ant.project.name}.jar java file">
+        <manifest file="${jar}/MANIFEST.MF">
+            <attribute name="Built-By" value="${user.name}" />
+            <attribute name="Main-Class" value="com/changent/jequire/Jequire" />
+            <attribute name="Class-Path" value="../lib/util.jar" />
+        </manifest>
+        <jar destfile="${jar}/${ant.project.name}.jar" manifest="${jar}/MANIFEST.MF">
+            <fileset dir="${class}" excludes="**/*.tws" />
+            <fileset dir="${rsrc}" />
+        </jar>
+    </target>
+
+    <target name="all" depends="jar_java" />
+
+</project>
