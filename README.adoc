@@ -14,8 +14,65 @@ Anyway... take from this whatever you wish. I am keeping it just for historical 
 
 == Requirements Engineering Reading List
 
-Some books on Requirements Engineering I found enlightening - with maybe a few other books that seem somehow relevant. I think most BAs would do well to understand the rigor involved in good requirements. That does not mean, though, that I any longer believe in _Big Requirements Up Front_ for most projects, not that the practice of *Waterfall* was anything like so many people believe.
+Some books on Requirements Engineering that I was reading at the time,
+and others that seem somehow relevant. At least, I think I was reading
+all these at the time I was building *Jequire*. It was twenty years ago.
+
+I feel most BAs would do well to understand the rigor involved in 
+good requirements. That does not mean, though, that I any longer 
+believe in _Big Requirements Up Front_ for most projects, not that 
+the practice of *Waterfall* was anything like so many people believe.
 
 There is no order here.
 
-. Weinberg, G. (199x). Exploring Requirements: Quality Before Design.
+. Weinberg, G. (1989). Exploring Requirements: Quality Before Design.
+. Weinberg, G. (1992). Quality Software Management - Volumes 1 through 4
++
+I read a lot of Jerry's books, even his fiction. There is so much value
+that seems relevant to this day. Sadly, most people, myself included, find
+it difficult to read something _before their time_. Yet, quite often that
+means each new generation must re-learn what earlier generations understood. 
+This applies to all disciplines, which brings to mind the quote (I 
+paraphrase):
++
+[quote]
+----
+Those who fail to study history are condemned to repeat it.
+---- 
++
+. Robertson, S., Robertson, J. (1999). Mastering The Requirements Process.
+. Robertson, S., Robertson, J. (1994). Complete Systems Analysis Volumes 1 and 2.
+. Davis, A., (1993). Software Requirements (Revision): Objects, Functions, & States
++
+It was probably the Robertson books that was informing the development of 
+*Jequire*, but I believe the Davis book had more impact in the long run.
++
+. Kovitz, B. (1999). Practical Software Requirements: A Manual Of Content & Style.
+. Abdel-Hamid, T., Madnick, S. (1990). Software Project Dynamics: An Ingegrated Approach
++
+An interesting book, as I recall. Probably more slanted towards project
+management, but it did discuss things that analysts, at least at the time,
+seldom considered. System dynamics is a fascininating subject, and, of course,
+Weinberg wrote of this as well.
++
+. Davis, A., (1995). 201 Principles Of Software Development.
++
+Another book by Davis. It covers the whole aspect of software development
+by phase. Much of this still seems relevant. Others, of course, have tread
+similar waters.
++
+. Jackson, M., (2001), Problem Frames: Analyzing And Structuring Software Development Problems
++
+I probably was no longer working on *Jequire* at the time I read this, but I
+added to this list for _it tells you how to think about and bound problems_.
+This thinking could be applied to arenas outside of software projects as well.
++
+. McConnell, S. (1996). Rapid Development: Taming Wild Software Schedules.
++
+I read everything Steve McConnell in the day, including all his columns in IEEE 
+Software. This book covers a gamut of things, so of which applies to the
+requirements phase. It also shows that the industry was thinking a lot about
+shorter cycles and other strategies in opposition to the much maligned *Waterfall* method,
+which never existed in the form most people today believe it did.
++
+
